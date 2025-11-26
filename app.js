@@ -1,12 +1,13 @@
 const paciente = {
-        peso :  62.50,
-        altura : 1.65,
-        nome : "Robert",
-        sobrenome: "Lewandowsky",
-        sexo: "masculino",
-        endereço: "Avenida Europa",
+        peso :  document.querySelector('#peso'),
+        altura : document.querySelector('#altura'),
+        nome : document.querySelector('#nome'),
+        sobre_nome: document.querySelector('#sobrenome'),
+        sexo: document.querySelector('#sexo'),
+        endereço: document.querySelector('#endereço'),
         IMC : "",
-}
+};
+console.log(paciente)
 paciente.IMC = paciente.peso / (paciente.altura **2);
 console.log(paciente.IMC);
 
