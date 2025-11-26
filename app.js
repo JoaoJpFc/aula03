@@ -64,3 +64,16 @@ console.log(endereço)
 
 const sexo  = document.querySelector('#sexo')
 console.log(sexo)
+
+const botao = document.querySelector('button')
+const form = document.querySelector('form')
+
+console.log(botao, form)
+
+function teste(){
+    form.addEventListener('submit',(evento)=>{
+        evento.preventDefault()
+        window.alert('Evento Recebido')
+    })
+}
+teste()
