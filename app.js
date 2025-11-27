@@ -119,7 +119,7 @@ function inserirResultado(faixa, resultado) {
   const paragrafo = document.querySelector("#paragrafo");
 
   paragrafo.innerText = "";
-  paragrafo.innerText = `O paciente ${dados.nome} tem um IMC de ${resultado}  e está com ${faixa}`;
+  paragrafo.innerText = `O paciente ${dados.nome} tem um IMC de ${resultado.toFixed(2)}  e está com ${faixa}`;
 
   // body.appendChild(paragrafo)
 }
